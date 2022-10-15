@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="p-5">
+      <form>
+        <div class="mb-6">
+          <label
+            for="title"
+            class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Title</label
+          ><input
+            type="text"
+            id="title"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-blue-500"
+            placeholder="Title"
+            required=""
+            value=""
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="featuredImage"
+            class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Featured Image</label
+          ><input
+            type="text"
+            id="featuredImage"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-blue-500"
+            placeholder="Url image"
+            required=""
+            value=""
+          />
+        </div>
+        <div class="mb-6">
+          <div>
+            <label
+              for="description"
+              class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"
+              >Description</label
+            ><textarea
+              id="description"
+              rows="3"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-blue-500"
+              placeholder="Your description..."
+              required=""
+            ></textarea>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label
+            for="publishDate"
+            class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Publish Date</label
+          ><input
+            type="datetime-local"
+            id="publishDate"
+            class="block w-56 rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-blue-500"
+            placeholder="Title"
+            required=""
+            value=""
+          />
+        </div>
+        <div class="mb-6 flex items-center">
+          <input
+            id="publish"
+            type="checkbox"
+            class="h-4 w-4 focus:ring-2 focus:ring-blue-500"
+          /><label for="publish" class="ml-2 text-sm font-medium text-gray-900"
+            >Publish</label
+          >
+        </div>
+        <div>
+          <button
+            class="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500 dark:text-white dark:focus:ring-blue-800"
+            type="submit"
+          >
+            <span
+              class="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900"
+              >Publish Post</span
+            >
+          </button>
+          <button
+            type="submit"
+            class="group relative mb-2 mr-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-300 to-lime-300 p-0.5 text-sm font-medium text-gray-900 focus:outline-none focus:ring-4 focus:ring-lime-200 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 dark:focus:ring-lime-800"
+          >
+            <span
+              class="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900"
+              >Update Post</span
+            ></button
+          ><button
+            type="reset"
+            class="group relative mb-2 mr-2 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 p-0.5 text-sm font-medium text-gray-900 focus:outline-none focus:ring-4 focus:ring-red-100 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 dark:focus:ring-red-400"
+          >
+            <span
+              class="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900"
+              >Cancel</span
+            >
+          </button>
+        </div>
+      </form>
+      <div>
+        <div class="bg-white py-6 sm:py-8 lg:py-12">
+          <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <div class="mb-10 md:mb-16">
+              <h2
+                class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+              >
+                Được Dev Blog
+              </h2>
+              <p
+                class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"
+              >
+                Đừng bao giờ từ bỏ. Hôm nay khó khăn, ngày mai sẽ trở nên tồi
+                tệ. Nhưng ngày mốt sẽ có nắng
+              </p>
+            </div>
+            <div
+              class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8"
+            >
+              <div
+                class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row"
+              >
+                <div
+                  class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1665412019489-1928d5afa5cc?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=765&amp;q=80"
+                    loading="lazy"
+                    alt="Mọi công việc thành đạt đều nhờ sự kiên trì và lòng say mê."
+                    class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 p-4 lg:p-6">
+                  <span class="text-sm text-gray-400">2022-10-13T11:32</span>
+                  <h2 class="text-xl font-bold text-gray-800">
+                    Mọi công việc thành đạt đều nhờ sự kiên trì và lòng say mê.
+                  </h2>
+                  <p class="text-gray-500">
+                    Nghịch cảnh là một phần của cuộc sống. Nó không thể bị kiểm
+                    soát. Cái có thể kiểm soát chính là cách chúng ta phản ứng
+                    trước nghịch cảnh.
+                  </p>
+                  <div>
+                    <div class="inline-flex rounded-md shadow-sm" role="group">
+                      <button
+                        type="button"
+                        class="rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Edit</button
+                      ><button
+                        type="button"
+                        class="rounded-r-lg border-t border-b border-r border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row"
+              >
+                <div
+                  class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1656333422687-6830f720c38f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80"
+                    loading="lazy"
+                    alt="Muốn thành công thì khao khát thành công phải lớn hơn nỗi sợ bị thất bại."
+                    class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 p-4 lg:p-6">
+                  <span class="text-sm text-gray-400">2022-10-14T11:33</span>
+                  <h2 class="text-xl font-bold text-gray-800">
+                    Muốn thành công thì khao khát thành công phải lớn hơn nỗi sợ
+                    bị thất bại.
+                  </h2>
+                  <p class="text-gray-500">
+                    Bạn chớ nên bỏ cuộc khi bạn vẫn còn điều gì đó để cho đi.
+                    Không có gì là hoàn toàn bế tắc, sự việc chỉ thật sự trở nên
+                    bế tắc khi bạn thôi không cố gắng nữa.
+                  </p>
+                  <div>
+                    <div class="inline-flex rounded-md shadow-sm" role="group">
+                      <button
+                        type="button"
+                        class="rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Edit</button
+                      ><button
+                        type="button"
+                        class="rounded-r-lg border-t border-b border-r border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row"
+              >
+                <div
+                  class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1656105544318-1cca8c4d9878?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"
+                    loading="lazy"
+                    alt="Mất niềm tin vào bản thân, cũng như bạn đánh mất thành công đang đợi mình"
+                    class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 p-4 lg:p-6">
+                  <span class="text-sm text-gray-400">2022-10-15T11:33</span>
+                  <h2 class="text-xl font-bold text-gray-800">
+                    Mất niềm tin vào bản thân, cũng như bạn đánh mất thành công
+                    đang đợi mình
+                  </h2>
+                  <p class="text-gray-500">
+                    Ai cũng nói tương lai chúng ta luôn rộng mở, nhưng nếu không
+                    nắm bắt được hiện tại thì tương lai sẽ chẳng có gì.
+                  </p>
+                  <div>
+                    <div class="inline-flex rounded-md shadow-sm" role="group">
+                      <button
+                        type="button"
+                        class="rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Edit</button
+                      ><button
+                        type="button"
+                        class="rounded-r-lg border-t border-b border-r border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center overflow-hidden rounded-lg border md:flex-row"
+              >
+                <div
+                  class="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1648184217069-34f0a57791bc?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+                    loading="lazy"
+                    alt="Nơi nào có ý chí, nơi đó có con đường."
+                    class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 p-4 lg:p-6">
+                  <span class="text-sm text-gray-400">2022-10-16T11:35</span>
+                  <h2 class="text-xl font-bold text-gray-800">
+                    Nơi nào có ý chí, nơi đó có con đường.
+                  </h2>
+                  <p class="text-gray-500">
+                    Tôi có thể chấp nhận thất bại, mọi người đều thất bại ở một
+                    việc gì đó. Nhưng tôi không chấp nhận việc không cố gắng.
+                  </p>
+                  <div>
+                    <div class="inline-flex rounded-md shadow-sm" role="group">
+                      <button
+                        type="button"
+                        class="rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Edit</button
+                      ><button
+                        type="button"
+                        class="rounded-r-lg border-t border-b border-r border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
