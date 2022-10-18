@@ -15,7 +15,7 @@ server.get('/echo', (req, res) => {
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
-  if (req.method === 'POST' || req.method === 'PUT' || req.method === 'PATCH') {
+  if (['POST', 'PUT', 'PATCH'].includes(req.method)) {
     if (new Date(req.body.publishDate).getTime() < new Date().getTime()) {
       return res.status(422).send({
         error: {
@@ -24,15 +24,9 @@ server.use((req, res, next) => {
       })
     }
   }
-  next()
-})
-server.use((req, res, next) => {
-  if (req.method === 'POST') {
-    req.body.createdAt = new Date().toISOString()
-  }
-  // Continue to JSON Server router
-  // setTimeout(() => next(), 2000)
-  next()
+  setTimeout(() => {
+    next()
+  }, 3000)
 })
 
 // Use default router

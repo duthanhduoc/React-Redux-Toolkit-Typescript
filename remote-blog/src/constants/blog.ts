@@ -1,17 +1,6 @@
-import { PostType } from 'types/blog.type'
+import { Post } from 'types/blog.type'
 
-export const authors = [
-  {
-    name: 'Alex',
-    id: 1
-  },
-  {
-    name: 'Ben',
-    id: 2
-  }
-]
-
-export const postListInital: PostType[] = [
+export const initalPostList: Post[] = [
   {
     description:
       'Nghịch cảnh là một phần của cuộc sống. Nó không thể bị kiểm soát. Cái có thể kiểm soát chính là cách chúng ta phản ứng trước nghịch cảnh.\n',
