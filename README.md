@@ -21,6 +21,7 @@ Dư Thanh Được
 
 ## Ý nghĩa thư mục
 
+- `starter-blog`: Folder React đã được setting hết mọi thứ từ Tailwindcss, Prettier, ESlint và UI. Tiết kiệm thời gian cho bạn nào không muốn setup từ đầu
 - `old-local-blog`: Học về createAction và createReducer
 - `local-blog`: Học về createSlice
 - `remote-blog`: Học về createSlice + createAsyncThunk kết hợp tương tác REST API
@@ -76,12 +77,11 @@ yarn add -D prettier eslint-plugin-prettier eslint-config-prettier
 
 3. Thêm script phục vụ việc check lỗi bằng prettier và eslint trong terminal vào file `package.json`
 
-Mở file `package.json` trong folder `new-remote-blog` lên, add những dòng này vào mục `script`
+Mở file `package.json` trong folder `new-remote-blog` lên, add những dòng này vào mục `script`. Đừng thay thế những script đã có mà là chỉ add thêm thôi nhé!
 
 ```json
 {
   "scripts": {
-    //...
     "lint": "eslint --ext ts,tsx src/",
     "lint:fix": "eslint --fix --ext ts,tsx src/",
     "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
@@ -114,7 +114,7 @@ indent_style = space
 }
 ```
 
-5. Tạo file `.esslintrc` trong thư mục root `new-remote-blog` với nội dung dưới đây
+5. Tạo file `.eslintrc` trong thư mục root `new-remote-blog` với nội dung dưới đây
 
 ```json
 {
@@ -151,7 +151,7 @@ Nhớ là cài ở trong folder `new-remote-blog` đấy nhé
 yarn add -D tailwindcss postcss autoprefixer
 ```
 
-Sau khi cài xong thì tiến hành khởi tạo tailwindcss config
+Sau khi cài xong thì tiến hành khởi tạo file tailwindcss config
 
 ```bash
 npx tailwindcss init -p
@@ -186,4 +186,27 @@ Prettier nó sẽ tự nhận plugin này, các bạn không cần setting gì t
 yarn add react-redux @reduxjs/toolkit
 ```
 
-Xong hết rồi đó, bây giờ bạn có thể tiến hành setup Redux được rồi
+Xong hết rồi đó, bây giờ bạn có thể tiến hành setup Redux và khởi tạo giao diện tailwindcss được rồi
+
+## Nếu bạn quá lười để tự cài các package trên, bạn có thể dùng template của mình
+
+Ưu điểm của việc tự cài là các bạn sẽ học được cách setup từ zero, nó không tốn quá nhiều thời gian của các bạn, chỉ cỡ 2 phút 😁. Ngoài ra các bạn tự cài thì sẽ luôn cài được các package với version mới nhất.
+
+Nhưng nếu các bạn chỉ muốn học Redux ngay thì mình có sẵn template cho các bạn
+
+Đó là folder `starter-blog`. Template này đã bao gồm việc setup các package prettier, eslint, tailwincss cần thiết cũng như là phân chia component UI sẵn cho các bạn (bao gồm luôn skeleton UI). Các bạn chỉ cần chạy lên và bắt đầu tiến hành cấu hình redux dùng thôi.
+
+Cách chạy:
+
+cd vào thư mục `starter-blog` và chạy các package cần thiết bằng `yarn`
+
+```bash
+cd starter-blog
+yarn
+```
+
+Chạy dự án
+
+```bash
+yarn start
+```
