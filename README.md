@@ -172,7 +172,17 @@ module.exports = {
 
 Ý nghĩa là Tailwindcss nó sẽ giám sát và có hiệu lực lên những file có đuôi là `.ts` và `.tsx` trong folder `src`
 
-8. Các bạn cài tiếp cho mình plugin sắp xếp các class cho tailwindcss
+8. import các class tailwindcss cần thiết vào file `index.css`
+
+Mở file `src/index.css` lên, xóa các css cũ đi, thay thế bằng css này
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+9. Các bạn cài tiếp cho mình plugin sắp xếp các class cho tailwindcss
 
 ```bash
 yarn add -D prettier-plugin-tailwindcss
@@ -180,11 +190,13 @@ yarn add -D prettier-plugin-tailwindcss
 
 Prettier nó sẽ tự nhận plugin này, các bạn không cần setting gì thêm nữa.
 
-9. Cài package react-redux và redux toolkit
+10. Cài package react-redux và redux toolkit
 
 ```bash
 yarn add react-redux @reduxjs/toolkit
 ```
+
+11. Chạy câu lệnh `yarn lint:fix` để EsLint tự động fix các lỗi không đúng theo rules
 
 Xong hết rồi đó, bây giờ bạn có thể tiến hành setup Redux và khởi tạo giao diện tailwindcss được rồi
 

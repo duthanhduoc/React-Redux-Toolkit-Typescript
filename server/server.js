@@ -26,7 +26,7 @@ server.use((req, res, next) => {
   }
   setTimeout(() => {
     next()
-  }, 3000)
+  }, 2000)
 })
 
 // Use default router
