@@ -57,6 +57,14 @@ Lúc này bạn sẽ thấy 1 folder là `dist` xuất hiện trong folder `temp
 
 ## Cách setup một dự án theo flow các video của mình
 
+### Chuẩn bị
+
+Ở đây mình dùng VS Code có cài extension là **Prettier**, **ESlint**, **Tailwind CSS IntelliSense**, **EditorConfig for VS Code**
+
+Các bạn vào VS Code setting giúp mình (seting bên User hay Workspace đều được): `Format On Save` là `true`, và `Default Formatter` là `Prettier - Code Formater`
+
+### Cài đặt
+
 1. Cài đặt một react app bằng CRA
 
 ```bash

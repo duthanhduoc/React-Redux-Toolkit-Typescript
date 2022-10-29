@@ -47,7 +47,14 @@ import { CustomError } from 'utils/helpers'
 export const blogApi = createApi({
   reducerPath: 'blogApi', // Tên field trong Redux state
   tagTypes: ['Posts'], // Những kiểu tag cho phép dùng trong blogApi
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/' }),
+  keepUnusedDataFor: 10, // Giữ data trong 10s sẽ xóa (mặc định 60s)
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'http://localhost:4000/',
+    prepareHeaders(headers) {
+      headers.set('authorization', 'Bearer ABCXYZ')
+      return headers
+    }
+  }),
   endpoints: (build) => ({
     // Generic type theo thứ tự là kiểu response trả về và argument
     getPosts: build.query<Post[], void>({
@@ -109,7 +116,16 @@ export const blogApi = createApi({
       invalidatesTags: (result, error, body) => (error ? [] : [{ type: 'Posts', id: 'LIST' }])
     }),
     getPost: build.query<Post, string>({
-      query: (id) => `posts/${id}`
+      query: (id) => ({
+        url: `posts/${id}`,
+        headers: {
+          hello: 'Im duoc'
+        },
+        params: {
+          first_name: 'du',
+          'last-name': 'duoc'
+        }
+      })
     }),
     updatePost: build.mutation<Post, { id: string; body: Post }>({
       query(data) {
